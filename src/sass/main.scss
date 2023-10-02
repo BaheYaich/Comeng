@@ -1,2 +1,9 @@
 @import "variables";
 @import "reset";
+@import "container";
+@import "header";
+
+html * {
+    font-family: $font-primary;
+    font-size: $font-size-base;
+}
