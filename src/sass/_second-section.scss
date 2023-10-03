@@ -1,0 +1,30 @@
+$windows-text : #003B93;
+
+section.windows-update-banner {
+    .windows-text {
+        color: $windows-text;
+        h3 {
+            line-height: 1.2;
+            color: transparent;
+
+            @supports (background-clip: text) or (-webkit-background-clip: text) {
+                background-clip: text;
+                // Google Chrome fix
+                -webkit-text-fill-color: transparent;
+                background: -webkit-linear-gradient(45deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+                background: -o-linear-gradient(transparent, transparent);
+                -webkit-background-clip: text;
+            }
+
+            background-image: linear-gradient(45deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+            display: block;
+        }
+    }
+    .windows-update-banner-bg {
+        object-position: 50% 10%;
+        // 
+        // @media  (max-width: $grid-breakpoints) {
+        //     transform: scale(2) translateX(10%);
+        // }
+    }
+}

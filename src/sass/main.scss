@@ -5,7 +5,6 @@
 
 html * {
     font-family: $font-primary;
-    font-size: $font-size-base;
 }
 figure picture {
     height: inherit;
@@ -15,5 +14,5 @@ figure picture {
     }
 }
 
-
 @import "first-section";
+@import "second-section";
