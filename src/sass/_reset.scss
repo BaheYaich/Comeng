@@ -34,6 +34,8 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+  overflow: hidden;
+  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
