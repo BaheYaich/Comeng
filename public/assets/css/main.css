@@ -2,6 +2,10 @@
   --bs-body-font-size: 18px ;
 }
 
+html {
+  overflow: auto;
+  scroll-padding-top: 70.4px;
+}
 html * {
   font-family: "Inter", sans-serif;
 }
