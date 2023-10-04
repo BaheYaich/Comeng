@@ -2,12 +2,32 @@
   --bs-body-font-size: 18px ;
 }
 
+html * {
+  font-family: "Inter", sans-serif;
+}
+
+figure picture {
+  height: inherit;
+  width: inherit;
+}
+figure picture img {
+  aspect-ratio: 16/9;
+}
+
 .place-items-center {
   place-items: center;
 }
 
 .place-items-start {
   place-items: start;
+}
+
+.color-primary {
+  color: #212427;
+}
+
+.color-accent {
+  color: #f2efe6;
 }
 
 /* Box sizing rules */
@@ -99,6 +119,7 @@ header .container h2.logo {
   color: #f2efe6;
   padding: 1rem;
 }
+
 header .container nav.menu ul {
   list-style: none;
   display: flex;
@@ -116,20 +137,45 @@ header .container nav.menu ul li a {
   text-decoration: none;
 }
 header .container nav.menu ul li a:hover {
-  color: #f2efe6;
-  text-decoration: underline;
+  color: transparent;
+  text-decoration: none;
+  display: block;
 }
-
-html * {
-  font-family: "Inter", sans-serif;
+header .container nav.menu ul li a.win11:hover {
+  background-image: linear-gradient(45deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
 }
-
-figure picture {
-  height: inherit;
-  width: inherit;
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  header .container nav.menu ul li a.win11:hover {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(45deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+  }
 }
-figure picture img {
-  aspect-ratio: 16/9;
+header .container nav.menu ul li a.pakettit:hover {
+  background-image: linear-gradient(45deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  header .container nav.menu ul li a.pakettit:hover {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(45deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+  }
+}
+header .container nav.menu ul li a.yhteystiedot:hover {
+  background-image: linear-gradient(225deg, rgb(195, 232, 176), rgb(89, 160, 211));
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  header .container nav.menu ul li a.yhteystiedot:hover {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(225deg, rgb(195, 232, 176), rgb(89, 160, 211));
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+  }
 }
 
 section.main-banner {
@@ -142,18 +188,42 @@ section.windows-update-banner .windows-text {
 section.windows-update-banner .windows-text h3 {
   line-height: 1.2;
   color: transparent;
-  background-image: linear-gradient(45deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+  background-image: linear-gradient(42deg, rgb(5, 6, 66) 0%, rgb(9, 9, 121) 50%, rgb(0, 212, 255) 100%);
   display: block;
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   section.windows-update-banner .windows-text h3 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(45deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+    background: -webkit-linear-gradient(42deg, rgb(5, 6, 66) 0%, rgb(9, 9, 121) 50%, rgb(0, 212, 255) 100%);
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
   }
 }
 section.windows-update-banner .windows-update-banner-bg {
   object-position: 50% 10%;
+}
+@media (max-width: 992px) {
+  section.windows-update-banner .windows-update-banner-bg {
+    transform: scale(2) translateX(10%);
+  }
+}
+@media (max-width: 576px) {
+  section.windows-update-banner .windows-update-banner-bg {
+    transform: scale(3) translateX(30%);
+  }
+}
+
+.palvelut-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .palvelut-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .palvelut-grid .grid-item {
+    height: 320px;
+  }
 }

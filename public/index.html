@@ -13,11 +13,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">        
+        <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
         <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>        <script defer src="assets/fontawesome/js/solid.min.js"></script>
-        <script defer src="assets/fontawesome/js/fontawesome.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -28,14 +27,15 @@
                 <h2 class="logo">Comeng</h2>
                 <nav class="menu">
                     <ul>
-                        <li><a href="#">Packages</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a class="win11" href="#">Windows 11</a></li>
+                        <li><a class="pakettit" href="#">Pakettit</a></li>
+                        <li><a class="yhteystiedot" href="#">Yhteystiedot</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section class="main-banner text-white">
+            <section class="main-banner position-relative text-white">
                 <div class="container pt-5 pb-5 h-100 d-grid place-items-center position-relative z-1">
                     <hgroup class="d-grid place-items-center">
                         <h1 class="main-title display-1 fw-bold pb-5">COMENG OY</h1>
@@ -51,12 +51,83 @@
                         <h6 class="phone-number"><i class="fa-solid fa-phone"></i> (050) 468 3928</h6>
                     </hgroup>
                 </div>
-                <figure class="position-absolute top-0 h-100 w-100">
+                <figure class="position-absolute top-0 h-100 w-100 overflow-hidden">
                     <picture>
                         <div class="bg-black h-100 w-100 opacity-50 position-absolute"></div>
                         <img alt="background image containing a gaming rig" class="h-100 w-100 object-fit-cover" src="assets/img/4.jpg">
                     </picture>
                 </figure>
+            </section>
+            <section class="windows-update-banner position-relative">
+                <div class="container pt-5 pb-5 position-relative z-1 d-grid place-items-start">
+                    <hgroup class="windows-text">
+                        <h4 class="h4">Onko koneessasi vanha Windows 8 tai 10?</h4>
+                        <h3 class="display-5 fw-bold"><strong>Nyt Windows 11 päivitys</strong></h3>
+                        <h4 class="h4 d-flex align-items-center justify-content-center"><span class="me-2">+ asennus yht. </span><span class="display-6 fw-bold"> 90€</span></h4>
+                    </hgroup>
+                </div>
+                <figure class="position-absolute top-0 h-100 w-100 overflow-hidden">
+                    <picture>
+                        <img alt="background image containing a portion of the official windows 11 wallpaper" class="h-100 w-100 object-fit-cover windows-update-banner-bg" src="assets/img/W11.png">
+                    </picture>
+                </figure>
+            </section>
+            <section class="position-relative pt-5 pb-5">
+                <div class="container pt-5 pb-5 z-1 position-relative">
+                    <div class="palvelut-grid grid-container d-grid gap-5">
+                        <div class="position-relative grid-item grid-item-1 overflow-hidden text-center p-5 d-grid shadow">
+                            <hgroup class="position-relative z-1 color-accent">
+                                <h3 class="h3 p-4 pb-5">Huollot</h3>
+                                <h6 class="fw-semibold">Kiinteä ja edullinen hinta, ammattitaitosta työtä.</h6>
+                                <h6 class="fw-normal">Nopeuta konettasi uudella SSD kiintolevyllä. Kone aukeaa muutamassa sekunnissa !</h6>
+                            </hgroup>
+                            <figure class="position-absolute top-0 h-100 w-100 start-0">
+                                <picture>
+                                    <div class="bg-black h-100 w-100 opacity-50 position-absolute"></div>
+                                    <img alt="" src="assets/img/2.jpg" class="h-100 w-100 object-fit-cover">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="position-relative grid-item grid-item-2 overflow-hidden text-center p-5 d-grid shadow">
+                            <hgroup class="position-relative z-1 color-accent">
+                                <h3 class="h3 p-4 pb-5">Tarvikkeet</h3>
+                                <h6 class="fw-semibold">Pidämme varastossa tarvittavia tarvikkeita kuten kovalevyjä, musitipiirejä, johtoja, väripatruunoita, jne..</h6>
+                            </hgroup>
+                            <figure class="position-absolute top-0 h-100 w-100 start-0">
+                                <picture>
+                                    <div class="bg-black h-100 w-100 opacity-50 position-absolute"></div>
+                                    <img alt="" src="assets/img/10.jpg" class="h-100 w-100 object-fit-cover">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="position-relative grid-item grid-item-3 overflow-hidden text-center p-5 d-grid shadow">
+                            <hgroup class="position-relative z-1 color-accent">
+                                <h3 class="h3 p-4 pb-5">Vahinkoarvio</h3>
+                                <h6 class="fw-semibold">Teemme vakuutusyhtiölle vioittuneiden tietokoneiden vahinkoarvion ja todistuksen.</h6>
+                                <h3 class="h3 fw-bold">Hinta 59€</h3>
+                            </hgroup>
+                            <figure class="position-absolute top-0 h-100 w-100 start-0">
+                                <picture>
+                                    <div class="bg-black h-100 w-100 opacity-50 position-absolute"></div>
+                                    <img alt="" src="assets/img/13.jpg" class="h-100 w-100 object-fit-cover">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="position-relative grid-item grid-item-4 overflow-hidden text-center p-5 d-grid shadow">
+                            <hgroup class="position-relative z-1 color-accent">
+                                <h3 class="h3 p-4 pb-5">Kannettavat</h3>
+                                <h6 class="fw-semibold">Tutut ja hyvät merkit kilpailukykyiseen hintaan!</h6>
+                                <h6 class="fw-normal">Esim: Fujitsu Lifebook E556 299€</h6>
+                            </hgroup>
+                            <figure class="position-absolute top-0 h-100 w-100 start-0">
+                                <picture>
+                                    <div class="bg-black h-100 w-100 opacity-50 position-absolute"></div>
+                                    <img alt="" src="assets/img/15.jpg" class="h-100 w-100 object-fit-cover">
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -64,5 +135,8 @@
 
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>        
+        <script defer src="assets/fontawesome/js/solid.min.js"></script>
+        <script defer src="assets/fontawesome/js/fontawesome.min.js"></script>
     </body>
 </html>

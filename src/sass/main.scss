@@ -1,7 +1,4 @@
 @import "variables";
-@import "utilities";
-@import "reset";
-@import "header";
 
 html * {
     font-family: $font-primary;
@@ -14,5 +11,10 @@ figure picture {
     }
 }
 
+@import "utilities";
+@import "reset";
+@import "header";
+@import "nav";
 @import "first-section";
 @import "second-section";
+@import "third-section";

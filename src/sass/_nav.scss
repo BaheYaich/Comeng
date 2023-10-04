@@ -1,0 +1,56 @@
+header .container nav.menu {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        li {
+            padding: 1rem;
+            a {
+                color: $color-accent;
+                margin: 0;
+                text-decoration: none;
+                &:hover {
+                    color: transparent;
+                    text-decoration: none;
+                    display: block;
+                }
+                &.win11:hover { 
+                    @supports (background-clip: text) or (-webkit-background-clip: text) {
+                        background-clip: text;
+                        // Google Chrome fix
+                        -webkit-text-fill-color: transparent;
+                        background: -webkit-linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+                        background: -o-linear-gradient(transparent, transparent);
+                        -webkit-background-clip: text;
+                    }
+                    background-image: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+                }
+                &.pakettit:hover {
+                    @supports (background-clip: text) or (-webkit-background-clip: text) {
+                        background-clip: text;
+                        // Google Chrome fix
+                        -webkit-text-fill-color: transparent;
+                        background: -webkit-linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+                        background: -o-linear-gradient(transparent, transparent);
+                        -webkit-background-clip: text;
+                    }
+                    background-image: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+                }
+                &.yhteystiedot:hover {
+                    @supports (background-clip: text) or (-webkit-background-clip: text) {
+                        background-clip: text;
+                        // Google Chrome fix
+                        -webkit-text-fill-color: transparent;
+                        background: -webkit-linear-gradient(225deg, rgba(195, 232, 176, 1.0), rgba(89, 160, 211, 1.0));
+                        background: -o-linear-gradient(transparent, transparent);
+                        -webkit-background-clip: text;
+                    }
+                    background-image: linear-gradient(225deg, rgba(195, 232, 176, 1.0), rgba(89, 160, 211, 1.0));
+                }
+            }
+        }
+    }
+} 
