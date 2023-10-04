@@ -34,6 +34,14 @@ figure picture img {
   color: #f2efe6;
 }
 
+.fs-7 {
+  font-size: 0.725rem;
+}
+
+.fs-8 {
+  font-size: 0.675rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -123,6 +131,11 @@ header .container h2.logo {
   color: #f2efe6;
   padding: 1rem;
 }
+@media (max-width: 768px) {
+  header .container h2.logo {
+    font-size: 0.725rem;
+  }
+}
 
 header .container nav.menu ul {
   list-style: none;
@@ -136,6 +149,7 @@ header .container nav.menu ul li {
   padding: 1rem;
 }
 header .container nav.menu ul li a {
+  display: block;
   color: #f2efe6;
   margin: 0;
   text-decoration: none;
@@ -143,7 +157,6 @@ header .container nav.menu ul li a {
 header .container nav.menu ul li a:hover {
   color: transparent;
   text-decoration: none;
-  display: block;
 }
 header .container nav.menu ul li a.win11:hover {
   background-image: linear-gradient(45deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
@@ -157,11 +170,11 @@ header .container nav.menu ul li a.win11:hover {
     -webkit-background-clip: text;
   }
 }
-header .container nav.menu ul li a.pakettit:hover {
+header .container nav.menu ul li a.paketit:hover {
   background-image: linear-gradient(45deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
-  header .container nav.menu ul li a.pakettit:hover {
+  header .container nav.menu ul li a.paketit:hover {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(45deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
@@ -179,6 +192,11 @@ header .container nav.menu ul li a.yhteystiedot:hover {
     background: -webkit-linear-gradient(225deg, rgb(195, 232, 176), rgb(89, 160, 211));
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
+  }
+}
+@media (max-width: 768px) {
+  header .container nav.menu ul li a {
+    font-size: 0.725rem;
   }
 }
 
