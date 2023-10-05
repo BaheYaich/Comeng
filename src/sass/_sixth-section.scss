@@ -1,0 +1,33 @@
+section#Yhteystiedot {
+    .grid-container {
+        grid-template-areas:
+            "contact-name    google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps" 
+            "contact-details google-maps";
+        .contact-name {
+            grid-area: contact-name;
+        }
+        .contact-details {
+            grid-area: contact-details;
+        }
+        .google-maps-frame{
+            grid-area: google-maps;
+        }
+        @media (max-width: 992px) {
+            grid-template-areas: "contact-name contact-details"
+                                "google-maps google-maps";
+        }
+        @media (max-width: 576px) {
+            grid-template-areas: "contact-name"
+                                "contact-details"
+                                "google-maps";
+        }
+    }
+}
