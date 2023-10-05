@@ -28,8 +28,8 @@
                 <nav class="menu">
                     <ul>
                         <li><a class="win11" href="#Windows">Windows 11</a></li>
-                        <li><a class="paketit" href="#">Paketit</a></li>
-                        <li><a class="yhteystiedot" href="#">Yhteystiedot</a></li>
+                        <li><a class="paketit" href="#Paketit">Paketit</a></li>
+                        <li><a class="yhteystiedot" href="#Yhteystiedot">Yhteystiedot</a></li>
                     </ul>
                 </nav>
             </div>
@@ -147,17 +147,65 @@
                     </picture>
                 </figure>
             </section>
-            <section>
+            <section id="Paketit" class="position-relative p-5">
                 <div class="container pt-5 pb-5 z-1 position-relative color-accent">
-                    <div class="grid-container d-grid place-items-center">
-                        <div class="grid-item grid-item-1"></div>
-                        <div class="grid-item grid-item-2"></div>
+                    <div class="grid-container d-grid place-items-center gap-5">
+                        <div class="grid-item grid-item-1 d-grid shadow">
+                            <figure>
+                                <picture>
+                                    <img src="assets/img/FujitsuPro.jpg" alt="a picture of a Fujitsu Elitebook" class="object-fit-cover w-100">
+                                </picture>
+                            </figure>
+                            <div class="color-primary p-5">
+                                <h5 class="mb-0">Pro kannettava</h5>
+                                <h4 class="mb-4">Fujitsu LIFEBOOK E556</h4>
+                                <ul class="list-unstyled">
+                                    <li>CPU-Tyyppi: i5-6200U</li>
+                                    <li>Tallennuskapasiteetti: 256Gt SSD</li>
+                                    <li>Käyttömuisti (RAM): 8Gt DDR4</li>
+                                    <li>Käyttöjärjestelmä: Windows 11</li>
+                                </ul>
+                            </div>
+                            <button class="btn w-100 p-3 bg-danger color-accent rounded-0">299€</button>
+                        </div>
+                        <div class="grid-item grid-item-2 d-grid shadow">
+                            <figure>
+                                <picture>
+                                    <img src="assets/img/FujitsuE556i32-r.jpg" alt="a picture of a Fujitsu laptop" class="object-fit-cover w-100">
+                                </picture>
+                            </figure>
+                            <div class="color-primary p-5">
+                                <h5 class="mb-0">Arki kannettava</h5>
+                                <h4 class="mb-4">Fujitsu LIFEBOOK E556</h4>
+                                <ul class="list-unstyled">
+                                    <li>CPU-Tyyppi: i5-6200U</li>
+                                    <li>Tallennuskapasiteetti: 256Gt SSD</li>
+                                    <li>Käyttömuisti (RAM): 8Gt DDR4</li>
+                                    <li>Käyttöjärjestelmä: Windows 11</li>
+                                </ul>
+                            </div>
+                            <button class="btn w-100 p-3 bg-danger color-accent rounded-0">199€</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Yhteystiedot" class="position-relative pt-5 pb-5 bg-dark">
+                <div class="container d-flex flex-row flex-wrap gap-5">
+                    <div class="color-accent d-flex flex-column gap-2">
+                        <h2 class="display-6 fw-bold mb-5">COMENG OY</h2>
+                        <h5><i class="fa-solid fa-house me-2"></i>Kiikkaistenkuja 1, 01800 Klaukkala</h5>
+                        <h5><i class="fa-solid fa-phone me-2"></i>(050) 468 3928</h5>
+                        <h5><i class="fa-solid fa-clock me-2"></i>Ma - To 10:00 - 17:00</h5>
+                        <h5><i class="fa-solid fa-clock me-2 opacity-0"></i>Pe          10:00 - 14:00</h5>
+                    </div>
+                    <div class="google-maps-frame overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.7523600649083!2d24.744929077414916!3d60.383250626217844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468dfb385fd156c1%3A0x2836d1d80101b27b!2sComeng%20Oy!5e0!3m2!1sen!2sfi!4v1696495399623!5m2!1sen!2sfi" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <section class="bg-dark text-center">
+            <section class="text-center">
                 <div class="container pt-3 pb-3 z-1 position-relative color-accent">
                     <small class="fs-8">© 2023. All rights reserved. Authored by <a href="https://github.com/BaheYaich" target="_blank">BaheYaich</a></small>
                 </div>

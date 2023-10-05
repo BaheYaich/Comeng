@@ -1,0 +1,33 @@
+section#Paketit {
+    @media (max-width: 768px) {
+        padding: 0 !important;
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-flow: column;
+        .grid-item {
+            width: 75%;
+            &.grid-item-1 {
+                justify-self: end;
+            }
+            &.grid-item-2 {
+                justify-self: start;
+            }
+        }
+        @media (max-width: 992px) {
+            .grid-item {
+                width: 100%;
+                &.grid-item-1, &.grid-item-2 {
+                    justify-self: normal;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-auto-flow: row;
+        }
+    }
+}
