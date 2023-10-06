@@ -10,6 +10,7 @@ section#Paketit {
         grid-auto-flow: column;
         .grid-item {
             width: 75%;
+            height: 100%;
             &.grid-item-1 {
                 justify-self: end;
             }

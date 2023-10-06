@@ -269,6 +269,7 @@ section#Paketit .grid-container {
 }
 section#Paketit .grid-container .grid-item {
   width: 75%;
+  height: 100%;
 }
 section#Paketit .grid-container .grid-item.grid-item-1 {
   justify-self: end;
