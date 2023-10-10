@@ -1,0 +1,14 @@
+section#Huoltotarjous {
+    .grid-container {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: all 1s ease-in-out;
+    }
+    
+    &.active {
+        .grid-container {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

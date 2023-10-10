@@ -1,11 +1,30 @@
-.palvelut-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+section#Palvelut {
+    .palvelut-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         .grid-item {
-            height: 320px
+            transition: all 1s ease-in-out;
+        }
+        .grid-item-1, .grid-item-3 {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        .grid-item-2, .grid-item-4 {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            .grid-item {
+                height: 320px
+            }
+        }
+    }
+    &.active {
+        .grid-item-1, .grid-item-3,.grid-item-2, .grid-item-4  {
+            transform: translateX(0);
+            opacity: 1;
         }
     }
 }

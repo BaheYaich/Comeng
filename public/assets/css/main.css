@@ -211,6 +211,9 @@ section.main-banner {
 
 section.windows-update-banner .windows-text {
   color: #003B93;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease-in-out;
 }
 section.windows-update-banner .windows-text h3 {
   line-height: 1.2;
@@ -240,19 +243,48 @@ section.windows-update-banner .windows-update-banner-bg {
     transform: scale(3) translateX(30%);
   }
 }
+section.windows-update-banner.active .windows-text {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-.palvelut-grid {
+section#Palvelut .palvelut-grid {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+section#Palvelut .palvelut-grid .grid-item {
+  transition: all 1s ease-in-out;
+}
+section#Palvelut .palvelut-grid .grid-item-1, section#Palvelut .palvelut-grid .grid-item-3 {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+section#Palvelut .palvelut-grid .grid-item-2, section#Palvelut .palvelut-grid .grid-item-4 {
+  transform: translateX(100%);
+  opacity: 0;
+}
 @media (max-width: 768px) {
-  .palvelut-grid {
+  section#Palvelut .palvelut-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  .palvelut-grid .grid-item {
+  section#Palvelut .palvelut-grid .grid-item {
     height: 320px;
   }
+}
+section#Palvelut.active .grid-item-1, section#Palvelut.active .grid-item-3, section#Palvelut.active .grid-item-2, section#Palvelut.active .grid-item-4 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+section#Huoltotarjous .grid-container {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease-in-out;
+}
+section#Huoltotarjous.active .grid-container {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
@@ -270,12 +302,16 @@ section#Paketit .grid-container {
 section#Paketit .grid-container .grid-item {
   width: 75%;
   height: 100%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
 section#Paketit .grid-container .grid-item.grid-item-1 {
   justify-self: end;
+  transform: translateX(-100%);
 }
 section#Paketit .grid-container .grid-item.grid-item-2 {
   justify-self: start;
+  transform: translateX(100%);
 }
 @media (max-width: 992px) {
   section#Paketit .grid-container .grid-item {
@@ -290,6 +326,12 @@ section#Paketit .grid-container .grid-item.grid-item-2 {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
   }
+}
+section#Paketit.active .grid-item {
+  opacity: 1;
+}
+section#Paketit.active .grid-item.grid-item-1, section#Paketit.active .grid-item.grid-item-2 {
+  transform: translateX(0);
 }
 
 section#Yhteystiedot .grid-container {
