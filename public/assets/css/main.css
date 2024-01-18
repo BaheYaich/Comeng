@@ -275,6 +275,11 @@ section#Palvelut .palvelut-grid .grid-item-2, section#Palvelut .palvelut-grid .g
     height: 320px;
   }
 }
+@media (max-width: 450px) {
+  section#Palvelut .palvelut-grid .grid-item-1 {
+    height: 350px;
+  }
+}
 section#Palvelut.active .grid-item-1, section#Palvelut.active .grid-item-3, section#Palvelut.active .grid-item-2, section#Palvelut.active .grid-item-4 {
   transform: translateX(0);
   opacity: 1;
