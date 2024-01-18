@@ -21,6 +21,9 @@ section#Paketit {
                 justify-self: start;
                 transform: translateX(100%);
             }
+            button.btn {
+                align-self: end;
+            }
         }
         @media (max-width: 992px) {
             .grid-item {

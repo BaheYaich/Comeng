@@ -10,6 +10,9 @@ html {
 html * {
   font-family: "Inter", sans-serif;
 }
+html body {
+  overflow: hidden;
+}
 
 figure picture {
   height: inherit;
@@ -312,6 +315,9 @@ section#Paketit .grid-container .grid-item.grid-item-1 {
 section#Paketit .grid-container .grid-item.grid-item-2 {
   justify-self: start;
   transform: translateX(100%);
+}
+section#Paketit .grid-container .grid-item button.btn {
+  align-self: end;
 }
 @media (max-width: 992px) {
   section#Paketit .grid-container .grid-item {
